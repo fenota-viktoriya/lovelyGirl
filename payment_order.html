@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--font and icons-->
+   <link rel="stylesheet" href="style/font/stylesheet.css">
+
+   <!--slider-->
+   <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="style/media.css">
+   <title>Home</title>
+</head>
+
+
+<body>
+
+   <div class="menu_overlay">
+      <div class="menu_overlay__burger">menu</div>
+      <nav>
+         <ul class="menu_overlay__list">
+            <li class="menu_overlay__item_has_child item_has_child">Магазин
+               <ul class="menu_overlay__sub_menu sub_menu">
+                  <li>
+                     <a href="#">Піжами
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"> Пеньюари</a>
+                  </li>
+                  <li>
+                     <a href="#">Халати</a>
+                  </li>
+                  <li>
+                     <a href="#">Халати</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="#">про нас</a>
+            </li>
+
+         </ul>
+      </nav>
+   </div>
+
+   <div class="header__search big_container">
+      <form role="search" method="get" id="search-form" action="#" class="search_form">
+         <span class="search-close"></span>
+         <input type="search" id="search-field" name="search">
+         <button class="search_input">
+            <i class="icon-search"></i>
+         </button>
+      </form>
+   </div>
+
+   <header id="header">
+      <div class="header__wrap big_container">
+         <div class="header__menu_wrap">
+            <div class="header__burger"></div>
+            <span>Menu</span>
+         </div>
+
+         <div class="header__logo">
+            <a href="/" class="logo">
+               <img src="/media/logo.svg" alt="logo">
+            </a>
+         </div>
+         <div class="header__action">
+            <div class="header__choice_wrap">
+               <ul class="header__choice">
+                  <li class="item_has_child">
+                     <a href="#">USD</a>
+                     <ul class="sub_menu">
+                        <li>
+                           <a href="#">
+                              UAH
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              rub
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="item_has_child">
+                     <a href="#">EN</a>
+                     <ul class="sub_menu">
+                        <li>
+                           <a href="#">
+                              UA
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              ru
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="header__search_icon">
+               <button id="search_input">
+                  <i class="icon-search"></i>
+               </button>
+            </div>
+            <div class="header__shop_card">
+               <a href="#">
+                  <i class="icon-shopping-cart"></i>
+                  <div class="counter">
+                     99
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <div class="breadcrumb_wrap main_container">
+         <ul class="breadcrumb">
+            <li>
+               <a href="#"> Головна</a>
+            </li>
+            <li>
+               <a href="#"> Корзина</a>
+            </li>
+            <li>Оформлення замовлення</li>
+         </ul>
+      </div>
+
+      <section id="payment">
+
+         <div class="payment__wrap main_container">
+
+            <div class="payment__order_data">
+               <div class="payment__order_data_wrap">
+
+                  <h3 class="title-h3">Замовлення №45544</h3>
+
+                  <div class="payment__data">
+                     <span>Кириленко Олена Андріївна<span>
+                           <span>+380665997530</span>
+                           <span>Харків, Харківська обл</span>
+                           <span>kyrylenko@gmail.com</span>
+                           <div>
+                              <span>Доставка:<strong> 35 відділення НП, Харків</strong></span>
+                           </div>
+                        </span>
+                  </div>
+
+                  <div class="payment__order">
+
+                     <div class="order_item ch">
+
+                        <div class="order_item__img">
+                           <img src="/media/ab2.png" alt="order">
+                        </div>
+
+                        <div class="order_item__info">
+                           <div class="order_item__name">
+                              Item Type / Name
+                           </div>
+                           <div class="order_item__size_color">
+                              <div class="order_item__color_wrap">
+                                 <span>Колір</span>
+                                 <div class="order_item__color"></div>
+                              </div>
+
+                              <div class="order_item__size ">
+                                 <span>Розмір</span>
+                                 <div class="one_item__size">
+                                    <span>XS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="order_item__counter ch">
+                           <span id="order_item__choose">1</span> <span>шт</span>
+                           <div class="order_item__button">
+                              <button id="plus">
+                                 <i class="icon-angle-up"></i>
+                              </button>
+                              <button id="minus">
+                                 <i class="icon-angle-down"></i>
+                              </button>
+                           </div>
+                        </div>
+
+                        <div class="order_item__price product__price">
+                           <span class="currency"> $ </span> <span class="price">49</span>
+                        </div>
+                     </div>
+
+                     <div class="order_item ch">
+
+                        <div class="order_item__img">
+                           <img src="/media/ab2.png" alt="order">
+                        </div>
+
+                        <div class="order_item__info">
+                           <div class="order_item__name">
+                              Item Type / Name
+                           </div>
+                           <div class="order_item__size_color">
+                              <div class="order_item__color_wrap">
+                                 <span>Колір</span>
+                                 <div class="order_item__color"></div>
+                              </div>
+
+                              <div class="order_item__size ">
+                                 <span>Розмір</span>
+                                 <div class="one_item__size">
+                                    <span>XS</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="order_item__counter ch">
+                           <span id="order_item__choose">1</span> <span>шт</span>
+                           <div class="order_item__button">
+                              <button id="plus">
+                                 <i class="icon-angle-up"></i>
+                              </button>
+                              <button id="minus">
+                                 <i class="icon-angle-down"></i>
+                              </button>
+                           </div>
+                        </div>
+
+                        <div class="order_item__price product__price">
+                           <span class="currency"> $ </span> <span class="price">49</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="payment">
+               <h3 class="title-h3">Оплата</h3>
+
+               <div class="payment__head">
+                  <div class="payment__total">
+                     <div class="ps">До сплати: </div>
+                     <div>
+                        <span class="currency">$</span><span>98.00</span>
+                     </div>
+                  </div>
+
+                  <div class="payment__method_wrap">
+                     <div class="ps col-100">Оберіть метод оплати: </div>
+                     <div class="payment__method">
+                        <a href="#">
+                           <img src="/media/pv.png" alt="lq">
+                        </a>
+                     </div>
+                     <div class="payment__method">
+                        <a href="#">
+                           <img src="/media/pp.png" alt="pp">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div id="payment-stripe" class="container">
+                     <div class="ps col-100">або: </div>
+
+                     <div class="payment__body">
+
+                        <div class="form-group">
+                           <label for="cc-number" class="control-label">Номер картки</label>
+                           <input id="cc-number" type="tel" class="input-lg form-control cc-number"
+                              autocomplete="cc-number" placeholder="0000 0000 0000 0000" data-payment='cc-number'
+                              required>
+                        </div>
+
+                        <div class="form-group">
+                           <label for="cc-number" class="control-label">Ім’я на картці</label>
+                           <input id="cc-name" type="tel" placeholder="напр. Кириленко Олена" required>
+                        </div>
+
+                        <div class="small">
+                           <div class="form-group">
+                              <label>Дата</label>
+                              <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp"
+                                 placeholder="MM / PPPP" data-payment='cc-exp' required>
+                           </div>
+
+                           <div class="form-group">
+                              <label>CVV / CVC
+                                 <i class="icon-question-circle-o">
+                                    <div class="tooltip">
+                                       <p>Lorem ipsum dolor sit amet consectetur </p>
+                                    </div>
+                                 </i>
+                              </label>
+                              <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off"
+                                 placeholder="•••" data-payment='cc-cvc' required>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="form_p">
+                        <p>We will send you an order details to your email after the successfull payment</p>
+                     </div>
+                     <button class="btn btn-primary btn-val" type="button" id="validate">
+                        <i class="icon-lock-rounded">
+                           Сплатити
+                        </i>
+                     </button>
+                  </div>
+
+               </div>
+            </div>
+
+      </section>
+
+   </main>
+
+   <footer id="footer">
+      <div class="footer__wrap main_container bg-grey">
+         <div class="footer__first_level">
+
+            <div class="footer__col footer__logo">
+               <a href="/" class="logo">
+                  <img src="/media/logo2.svg" alt="logo">
+               </a>
+               <div class="icon_social">
+
+                  <a href="#" class="icon-instagram"></a>
+                  <a href="#" class="icon-pinterest-p"></a>
+               </div>
+            </div>
+
+            <div class="footer__col">
+               <ul class="footer__menu">
+                  <li>
+                     <a href="#">Головна</a>
+                  </li>
+                  <li>
+                     <a href="#">Про нас</a>
+                  </li>
+                  <li>
+                     <a href="#">Доставка та оплата</a>
+                  </li>
+                  <li>
+                     <a href="#">Політка конфіденційності</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col">
+               <ul class="footer__category">
+                  <li>
+                     <a href="#">Магазин</a>
+                  </li>
+                  <li>
+                     <a href="#">Піжами</a>
+                  </li>
+                  <li>
+                     <a href="#">Пеньюари</a>
+                  </li>
+                  <li>
+                     <a href="#">Халати</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__contact">
+               <div class="footer__address">
+                  <a href="#">г. Киев, ул. Большая Васильковская, 30</a>
+               </div>
+               <ul class="footer__schedule">
+                  <li>Пн-Пт: c 9 до 20</li>
+                  <li>Сб: с 10 до 20</li>
+                  <li>Вс: с 10 до 18</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="payment_icons">
+            <img src="/media/visa.png" alt="Visa">
+            <img src="/media/mastercard.png" alt="mastercard">
+            <img src="/media/paypal.png" alt="paypal">
+         </div>
+         <div class="copyright">
+            All rights reserved © Lovely Girl
+         </div>
+      </div>
+   </footer>
+
+
+   <script src="script/swiper-bundle.min.js"></script>
+   <script src="/script/jquery-3.6.0.min.js"></script>
+   <script src="script/script.js"></script>
+</body>
+
+</html>
