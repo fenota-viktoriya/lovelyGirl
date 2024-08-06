@@ -1,499 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font and icons-->
+    <link rel="stylesheet" href="style/font/stylesheet.css" />
 
-   <!--font and icons-->
-   <link rel="stylesheet" href="style/font/stylesheet.css">
+    <!--slider-->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
 
-   <!--slider-->
-   <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media.css" />
+    <title>Home</title>
+  </head>
 
-   <link rel="stylesheet" href="style/style.css">
-   <link rel="stylesheet" href="style/media.css">
-   <title>Home</title>
-</head>
-
-
-<body>
-
-   <div class="menu_overlay">
+  <body>
+    <div class="menu_overlay">
       <div class="menu_overlay__burger">menu</div>
       <nav>
-         <ul class="menu_overlay__list">
-            <li class="menu_overlay__item_has_child item_has_child">Магазин
-               <ul class="menu_overlay__sub_menu sub_menu">
-                  <li>
-                     <a href="#">Піжами
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"> Пеньюари</a>
-                  </li>
-                  <li>
-                     <a href="#">Халати</a>
-                  </li>
-                  <li>
-                     <a href="#">Халати</a>
-                  </li>
-               </ul>
-            </li>
-            <li>
-               <a href="#">про нас</a>
-            </li>
-
-         </ul>
+        <ul class="menu_overlay__list">
+          <li class="menu_overlay__item_has_child item_has_child">
+            Магазин
+            <ul class="menu_overlay__sub_menu sub_menu">
+              <li>
+                <a href="#">Піжами </a>
+              </li>
+              <li>
+                <a href="#"> Пеньюари</a>
+              </li>
+              <li>
+                <a href="#">Халати</a>
+              </li>
+              <li>
+                <a href="#">Халати</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">про нас</a>
+          </li>
+        </ul>
       </nav>
-   </div>
+    </div>
 
-   <div class="header__search big_container">
-      <form role="search" method="get" id="search-form" action="#" class="search_form">
-         <span class="search-close"></span>
-         <input type="search" id="search-field" name="search">
-         <button class="search_input">
-            <i class="icon-search"></i>
-         </button>
+    <div class="header__search big_container">
+      <form
+        role="search"
+        method="get"
+        id="search-form"
+        action="#"
+        class="search_form"
+      >
+        <span class="search-close"></span>
+        <input type="search" id="search-field" name="search" />
+        <button class="search_input">
+          <i class="icon-search"></i>
+        </button>
       </form>
-   </div>
+    </div>
 
-   <header id="header">
+    <header id="header">
       <div class="header__wrap big_container">
-         <div class="header__menu_wrap">
-            <div class="header__burger"></div>
-            <span>Menu</span>
-         </div>
+        <div class="header__menu_wrap">
+          <div class="header__burger"></div>
+          <span>Menu</span>
+        </div>
 
-         <div class="header__logo">
-            <a href="/" class="logo">
-               <img src="/media/logo.svg" alt="logo">
+        <div class="header__logo">
+          <a href="/" class="logo">
+            <img src="./media/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__action">
+          <div class="header__choice_wrap">
+            <ul class="header__choice">
+              <li class="item_has_child">
+                <a href="#">USD</a>
+                <ul class="sub_menu">
+                  <li>
+                    <a href="#"> UAH </a>
+                  </li>
+                  <li>
+                    <a href="#"> rub </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item_has_child">
+                <a href="#">EN</a>
+                <ul class="sub_menu">
+                  <li>
+                    <a href="#"> UA </a>
+                  </li>
+                  <li>
+                    <a href="#"> ru </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__search_icon">
+            <button id="search_input">
+              <i class="icon-search"></i>
+            </button>
+          </div>
+          <div class="header__shop_card">
+            <a href="#">
+              <i class="icon-shopping-cart"></i>
+              <div class="counter">99</div>
             </a>
-         </div>
-         <div class="header__action">
-            <div class="header__choice_wrap">
-               <ul class="header__choice">
-                  <li class="item_has_child">
-                     <a href="#">USD</a>
-                     <ul class="sub_menu">
-                        <li>
-                           <a href="#">
-                              UAH
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                              rub
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="item_has_child">
-                     <a href="#">EN</a>
-                     <ul class="sub_menu">
-                        <li>
-                           <a href="#">
-                              UA
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                              ru
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
-
-            <div class="header__search_icon">
-               <button id="search_input">
-                  <i class="icon-search"></i>
-               </button>
-            </div>
-            <div class="header__shop_card">
-               <a href="#">
-                  <i class="icon-shopping-cart"></i>
-                  <div class="counter">
-                     99
-                  </div>
-               </a>
-            </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </header>
+    </header>
 
-   <main>
+    <main>
       <section id="title">
-         <div class="section_title ">
-            <div class="breadcrumb_wrap">
-               <ul class="breadcrumb">
-                  <li><a href="#"> Головна</a></li>
-                  <li>Усі товари</li>
-               </ul>
-            </div>
+        <div class="section_title">
+          <div class="breadcrumb_wrap">
+            <ul class="breadcrumb">
+              <li><a href="#"> Головна</a></li>
+              <li>Усі товари</li>
+            </ul>
+          </div>
 
-            <h1>
-               Усі товари
-            </h1>
-         </div>
+          <h1>Усі товари</h1>
+        </div>
       </section>
 
       <section id="catalog">
-
-         <div class="catalog__wrap big_container">
-
-            <div class="catalog__head">
-               <div class="filter_mobile">
-                  <button class="filter__button">
-                     Фільтри
-                  </button>
-                  <ul class="filter__value">
-                     <li class="active">
-                        <a href="#"> Усі </a>
-                     </li>
-                     <li>
-                        <a href="#"> Халати</a>
-                     </li>
-                     <li>
-                        <a href="#">Пеньюари</a>
-                     </li>
-                     <li>
-                        <a href="#">Піжами</a>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="sorting">
-
-                  <select id="sorting-price">
-                     <option value="expensive">За зростанням ціни</option>
-                     <option value="cheap">За спаданням ціни</option>
-                  </select>
-
-               </div>
-
+        <div class="catalog__wrap big_container">
+          <div class="catalog__head">
+            <div class="filter_mobile">
+              <button class="filter__button">Фільтри</button>
+              <ul class="filter__value">
+                <li class="active">
+                  <a href="#"> Усі </a>
+                </li>
+                <li>
+                  <a href="#"> Халати</a>
+                </li>
+                <li>
+                  <a href="#">Пеньюари</a>
+                </li>
+                <li>
+                  <a href="#">Піжами</a>
+                </li>
+              </ul>
             </div>
 
-            <div class="catalog__body">
-               <aside class="filter">
-
-                  <ul class="filter__value">
-                     <li class="active">
-                        <a href="#"> Усі </a>
-                     </li>
-                     <li>
-                        <a href="#"> Халати</a>
-                     </li>
-                     <li>
-                        <a href="#">Пеньюари</a>
-                     </li>
-                     <li>
-                        <a href="#">Піжами</a>
-                     </li>
-                  </ul>
-
-               </aside>
-
-               <div class="catalog__product_wrap">
-
-                  <div class="catalog__product product__item col-33">
-                     <div class="product__item_wrap">
-
-                        <div class="product__img">
-                           <img src="/media/categ.png" alt="item">
-                           <div class="product__desc">
-                              <div class="desc__col-1">
-                                 <div class="product__price">
-                                    <span class="currency"> $ </span> <span class="price">49</span>
-                                 </div>
-
-                                 <div class="product__name">
-                                    <span>Lorem ipsum dolor sit</span>
-                                 </div>
-                              </div>
-
-                              <div class="desc__col-2">
-                                 <div>
-                                    <div class="product__color"></div>
-
-                                    <div class="product__size">
-                                       <span>XL</span>
-                                    </div>
-                                 </div>
-
-                                 <div class="product__buy_mobile">
-                                    <a href="#" class="icon-shopping-cart"></a>
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="product__buy transp-btn">
-                        <a href="#">До кошика</a>
-                     </div>
-
-                  </div>
-                  <div class="catalog__product product__item col-33">
-                     <div class="product__item_wrap">
-
-                        <div class="product__img">
-                           <img src="/media/categ.png" alt="item">
-                           <div class="product__desc">
-                              <div class="desc__col-1">
-                                 <div class="product__price">
-                                    <span class="currency"> $ </span> <span class="price">49</span>
-                                 </div>
-
-                                 <div class="product__name">
-                                    <span>Lorem ipsum dolor sit</span>
-                                 </div>
-                              </div>
-
-                              <div class="desc__col-2">
-                                 <div>
-                                    <div class="product__color"></div>
-
-                                    <div class="product__size">
-                                       <span>XL</span>
-                                    </div>
-                                 </div>
-
-                                 <div class="product__buy_mobile">
-                                    <a href="#" class="icon-shopping-cart"></a>
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="product__buy transp-btn">
-                        <a href="#">До кошика</a>
-                     </div>
-
-                  </div>
-                  <div class="catalog__product product__item col-33">
-                     <div class="product__item_wrap">
-
-                        <div class="product__img">
-                           <img src="/media/categ.png" alt="item">
-                           <div class="product__desc">
-                              <div class="desc__col-1">
-                                 <div class="product__price">
-                                    <span class="currency"> $ </span> <span class="price">49</span>
-                                 </div>
-
-                                 <div class="product__name">
-                                    <span>Lorem ipsum dolor sit</span>
-                                 </div>
-                              </div>
-
-                              <div class="desc__col-2">
-                                 <div>
-                                    <div class="product__color"></div>
-
-                                    <div class="product__size">
-                                       <span>XL</span>
-                                    </div>
-                                 </div>
-
-                                 <div class="product__buy_mobile">
-                                    <a href="#" class="icon-shopping-cart"></a>
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="product__buy transp-btn">
-                        <a href="#">До кошика</a>
-                     </div>
-
-                  </div>
-                  <div class="catalog__product product__item col-33">
-                     <div class="product__item_wrap">
-
-                        <div class="product__img">
-                           <img src="/media/categ.png" alt="item">
-                           <div class="product__desc">
-                              <div class="desc__col-1">
-                                 <div class="product__price">
-                                    <span class="currency"> $ </span> <span class="price">49</span>
-                                 </div>
-
-                                 <div class="product__name">
-                                    <span>Lorem ipsum dolor sit</span>
-                                 </div>
-                              </div>
-
-                              <div class="desc__col-2">
-                                 <div>
-                                    <div class="product__color"></div>
-
-                                    <div class="product__size">
-                                       <span>XL</span>
-                                    </div>
-                                 </div>
-
-                                 <div class="product__buy_mobile">
-                                    <a href="#" class="icon-shopping-cart"></a>
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="product__buy transp-btn">
-                        <a href="#">До кошика</a>
-                     </div>
-
-                  </div>
-                  <div class="catalog__product product__item col-33">
-                     <div class="product__item_wrap">
-
-                        <div class="product__img">
-                           <img src="/media/categ.png" alt="item">
-                           <div class="product__desc">
-                              <div class="desc__col-1">
-                                 <div class="product__price">
-                                    <span class="currency"> $ </span> <span class="price">49</span>
-                                 </div>
-
-                                 <div class="product__name">
-                                    <span>Lorem ipsum dolor sit</span>
-                                 </div>
-                              </div>
-
-                              <div class="desc__col-2">
-                                 <div>
-                                    <div class="product__color"></div>
-
-                                    <div class="product__size">
-                                       <span>XL</span>
-                                    </div>
-                                 </div>
-
-                                 <div class="product__buy_mobile">
-                                    <a href="#" class="icon-shopping-cart"></a>
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="product__buy transp-btn">
-                        <a href="#">До кошика</a>
-                     </div>
-
-                  </div>
-               </div>
-
+            <div class="sorting">
+              <select id="sorting-price">
+                <option value="expensive">За зростанням ціни</option>
+                <option value="cheap">За спаданням ціни</option>
+              </select>
             </div>
+          </div>
 
-            <div class="pagination">
-               <ul>
-                  <li class="active">
-                     <a href="#">1</a>
-                  </li>
-                  <li>
-                     <a href="#">2</a>
-                  </li>
-                  <li>
-                     <a href="#">3</a>
-                  </li>
-                  <li>
-                     <a href="#">4</a>
-                  </li>
-                  <li>
-                     <a href="#">5</a>
-                  </li>
-               </ul>
+          <div class="catalog__body">
+            <aside class="filter">
+              <ul class="filter__value">
+                <li class="active">
+                  <a href="#"> Усі </a>
+                </li>
+                <li>
+                  <a href="#"> Халати</a>
+                </li>
+                <li>
+                  <a href="#">Пеньюари</a>
+                </li>
+                <li>
+                  <a href="#">Піжами</a>
+                </li>
+              </ul>
+            </aside>
+
+            <div class="catalog__product_wrap">
+              <div class="catalog__product product__item col-33">
+                <div class="product__item_wrap">
+                  <div class="product__img">
+                    <img src="./media/categ.png" alt="item" />
+                    <div class="product__desc">
+                      <div class="desc__col-1">
+                        <div class="product__price">
+                          <span class="currency"> $ </span>
+                          <span class="price">49</span>
+                        </div>
+
+                        <div class="product__name">
+                          <span>Lorem ipsum dolor sit</span>
+                        </div>
+                      </div>
+
+                      <div class="desc__col-2">
+                        <div>
+                          <div class="product__color"></div>
+
+                          <div class="product__size">
+                            <span>XL</span>
+                          </div>
+                        </div>
+
+                        <div class="product__buy_mobile">
+                          <a href="#" class="icon-shopping-cart"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__buy transp-btn">
+                  <a href="#">До кошика</a>
+                </div>
+              </div>
+              <div class="catalog__product product__item col-33">
+                <div class="product__item_wrap">
+                  <div class="product__img">
+                    <img src="./media/categ.png" alt="item" />
+                    <div class="product__desc">
+                      <div class="desc__col-1">
+                        <div class="product__price">
+                          <span class="currency"> $ </span>
+                          <span class="price">49</span>
+                        </div>
+
+                        <div class="product__name">
+                          <span>Lorem ipsum dolor sit</span>
+                        </div>
+                      </div>
+
+                      <div class="desc__col-2">
+                        <div>
+                          <div class="product__color"></div>
+
+                          <div class="product__size">
+                            <span>XL</span>
+                          </div>
+                        </div>
+
+                        <div class="product__buy_mobile">
+                          <a href="#" class="icon-shopping-cart"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__buy transp-btn">
+                  <a href="#">До кошика</a>
+                </div>
+              </div>
+              <div class="catalog__product product__item col-33">
+                <div class="product__item_wrap">
+                  <div class="product__img">
+                    <img src="./media/categ.png" alt="item" />
+                    <div class="product__desc">
+                      <div class="desc__col-1">
+                        <div class="product__price">
+                          <span class="currency"> $ </span>
+                          <span class="price">49</span>
+                        </div>
+
+                        <div class="product__name">
+                          <span>Lorem ipsum dolor sit</span>
+                        </div>
+                      </div>
+
+                      <div class="desc__col-2">
+                        <div>
+                          <div class="product__color"></div>
+
+                          <div class="product__size">
+                            <span>XL</span>
+                          </div>
+                        </div>
+
+                        <div class="product__buy_mobile">
+                          <a href="#" class="icon-shopping-cart"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__buy transp-btn">
+                  <a href="#">До кошика</a>
+                </div>
+              </div>
+              <div class="catalog__product product__item col-33">
+                <div class="product__item_wrap">
+                  <div class="product__img">
+                    <img src="./media/categ.png" alt="item" />
+                    <div class="product__desc">
+                      <div class="desc__col-1">
+                        <div class="product__price">
+                          <span class="currency"> $ </span>
+                          <span class="price">49</span>
+                        </div>
+
+                        <div class="product__name">
+                          <span>Lorem ipsum dolor sit</span>
+                        </div>
+                      </div>
+
+                      <div class="desc__col-2">
+                        <div>
+                          <div class="product__color"></div>
+
+                          <div class="product__size">
+                            <span>XL</span>
+                          </div>
+                        </div>
+
+                        <div class="product__buy_mobile">
+                          <a href="#" class="icon-shopping-cart"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__buy transp-btn">
+                  <a href="#">До кошика</a>
+                </div>
+              </div>
+              <div class="catalog__product product__item col-33">
+                <div class="product__item_wrap">
+                  <div class="product__img">
+                    <img src="./media/categ.png" alt="item" />
+                    <div class="product__desc">
+                      <div class="desc__col-1">
+                        <div class="product__price">
+                          <span class="currency"> $ </span>
+                          <span class="price">49</span>
+                        </div>
+
+                        <div class="product__name">
+                          <span>Lorem ipsum dolor sit</span>
+                        </div>
+                      </div>
+
+                      <div class="desc__col-2">
+                        <div>
+                          <div class="product__color"></div>
+
+                          <div class="product__size">
+                            <span>XL</span>
+                          </div>
+                        </div>
+
+                        <div class="product__buy_mobile">
+                          <a href="#" class="icon-shopping-cart"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__buy transp-btn">
+                  <a href="#">До кошика</a>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
 
+          <div class="pagination">
+            <ul>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-   </main>
+    </main>
 
-   <footer id="footer">
+    <footer id="footer">
       <div class="footer__wrap main_container bg-grey">
-         <div class="footer__first_level">
-
-            <div class="footer__col footer__logo">
-               <a href="/" class="logo">
-                  <img src="/media/logo2.svg" alt="logo">
-               </a>
-               <div class="icon_social">
-
-                  <a href="#" class="icon-instagram"></a>
-                  <a href="#" class="icon-pinterest-p"></a>
-               </div>
+        <div class="footer__first_level">
+          <div class="footer__col footer__logo">
+            <a href="/" class="logo">
+              <img src="./media/logo2.svg" alt="logo" />
+            </a>
+            <div class="icon_social">
+              <a href="#" class="icon-instagram"></a>
+              <a href="#" class="icon-pinterest-p"></a>
             </div>
+          </div>
 
-            <div class="footer__col">
-               <ul class="footer__menu">
-                  <li>
-                     <a href="#">Головна</a>
-                  </li>
-                  <li>
-                     <a href="#">Про нас</a>
-                  </li>
-                  <li>
-                     <a href="#">Доставка та оплата</a>
-                  </li>
-                  <li>
-                     <a href="#">Політка конфіденційності</a>
-                  </li>
-               </ul>
+          <div class="footer__col">
+            <ul class="footer__menu">
+              <li>
+                <a href="#">Головна</a>
+              </li>
+              <li>
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#">Доставка та оплата</a>
+              </li>
+              <li>
+                <a href="#">Політка конфіденційності</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__category">
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Піжами</a>
+              </li>
+              <li>
+                <a href="#">Пеньюари</a>
+              </li>
+              <li>
+                <a href="#">Халати</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__contact">
+            <div class="footer__address">
+              <a href="#">г. Киев, ул. Большая Васильковская, 30</a>
             </div>
-            <div class="footer__col">
-               <ul class="footer__category">
-                  <li>
-                     <a href="#">Магазин</a>
-                  </li>
-                  <li>
-                     <a href="#">Піжами</a>
-                  </li>
-                  <li>
-                     <a href="#">Пеньюари</a>
-                  </li>
-                  <li>
-                     <a href="#">Халати</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="footer__col footer__contact">
-               <div class="footer__address">
-                  <a href="#">г. Киев, ул. Большая Васильковская, 30</a>
-               </div>
-               <ul class="footer__schedule">
-                  <li>Пн-Пт: c 9 до 20</li>
-                  <li>Сб: с 10 до 20</li>
-                  <li>Вс: с 10 до 18</li>
-               </ul>
-            </div>
-         </div>
+            <ul class="footer__schedule">
+              <li>Пн-Пт: c 9 до 20</li>
+              <li>Сб: с 10 до 20</li>
+              <li>Вс: с 10 до 18</li>
+            </ul>
+          </div>
+        </div>
 
-         <div class="payment_icons">
-            <img src="/media/visa.png" alt="Visa">
-            <img src="/media/mastercard.png" alt="mastercard">
-            <img src="/media/paypal.png" alt="paypal">
-         </div>
-         <div class="copyright">
-            All rights reserved © Lovely Girl
-         </div>
+        <div class="payment_icons">
+          <img src="./media/visa.png" alt="Visa" />
+          <img src="./media/mastercard.png" alt="mastercard" />
+          <img src="./media/paypal.png" alt="paypal" />
+        </div>
+        <div class="copyright">All rights reserved © Lovely Girl</div>
       </div>
-   </footer>
+    </footer>
 
-   <script src="script/swiper-bundle.min.js"></script>
-   <script src="/script/jquery-3.6.0.min.js"></script>
-   <script src="script/script.js"></script>
-</body>
-
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
